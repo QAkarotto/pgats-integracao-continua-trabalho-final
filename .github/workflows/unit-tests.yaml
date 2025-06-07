@@ -29,8 +29,15 @@ jobs:
 
       - name: Executando Testes Unitários
         run: yarn mocha ./testes/trabalho-final.js
+        
+      - name: Publicando Artefato do Relatório Mochawesome de Execução dos Testes
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: relatorio
+          path: mochawesome-report
 
-      - name: Publicando Relatório de Execução dos Testes
+      - name: Publicando Relatório JUnit de Execução dos Testes
         uses: dorny/test-reporter@v1
         if: ${{ !cancelled() }}
         with:

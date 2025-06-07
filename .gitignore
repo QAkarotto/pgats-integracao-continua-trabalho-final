@@ -2,3 +2,5 @@
 yarn.lock
 /mochawesome-report
 package-lock.json
+/test-results
+*.xml
