@@ -1,0 +1,4 @@
+/node_modules
+yarn.lock
+/mochawesome-report
+package-lock.json
