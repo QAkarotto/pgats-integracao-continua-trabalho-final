@@ -24,11 +24,12 @@ jobs:
         run: yarn
 
       - name: Executando Testes Unitários
-        run: yarn mocha ./testes/trabalho-final.js --reporter mochawesome
+        run: yarn mocha ./testes/trabalho-final.js
         
       - name: Publicando Relatório de Execução dos Testes
         uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
-          name: relatorio
-          path: mochawesome-report
+          name: Unit Tests
+          path: test-results/results.xml
+          reporter: mocha-junit

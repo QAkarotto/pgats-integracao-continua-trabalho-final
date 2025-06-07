@@ -19,7 +19,7 @@ describe('Testes da disciplina - fundamentos JS', () => {
   })
 
   it('QUANDO o peso = 14.5, DEVE ser retornado 4350 gramas para o consumo diário', () => {
-    assert.strictEqual(calcularConsumoDeRacao('Pitoco', 1, 14.5), 4350)
+    assert.strictEqual(calcularConsumoDeRacao('Pitoco', 1, 14.5), 4351)
   });
 
   it('QUANDO o porte = pequeno, DEVE ser retornada a atividade adequada', () => {
