@@ -4,6 +4,10 @@ on:
   push:
   workflow_dispatch:
 
+permissions:
+  checks: write
+  contents: read
+
 jobs:
   unit-tests:
     runs-on: ubuntu-24.04
