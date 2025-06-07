@@ -32,4 +32,4 @@ jobs:
         with:
           name: Unit Tests
           path: test-results/results.xml
-          reporter: mocha-junit
+          reporter: java-junit
