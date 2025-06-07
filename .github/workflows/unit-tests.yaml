@@ -27,7 +27,7 @@ jobs:
         run: yarn mocha ./testes/trabalho-final.js
         
       - name: Publicando Relatório de Execução dos Testes
-        uses: actions/upload-artifact@v4
+        uses: dorny/test-reporter@v1
         if: ${{ !cancelled() }}
         with:
           name: Unit Tests

@@ -2,6 +2,7 @@
   "name": "pgats-programacao",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "repository": "https://github.com/QAkarotto/pgats-programacao.git",
   "author": "Goku / João Vitor dos Santos <qakarotto@gmail.com>",
   "license": "MIT",
